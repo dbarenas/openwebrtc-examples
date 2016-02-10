@@ -1,5 +1,0 @@
-platform :ios, '8.0'
-
-target 'Selfie' do
-    pod 'OpenWebRTC-SDK',  :git => 'https://github.com/EricssonResearch/openwebrtc-ios-sdk.git'
-end
