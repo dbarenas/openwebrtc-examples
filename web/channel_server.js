@@ -45,7 +45,7 @@ var server = http.createServer(function (request, response) {
             response.writeHead(200, headers);
             function keepAlive(resp) {
                 resp.write(":\n");
-                resp.keepAliveTimer = setTimeout(arguments.callee, 30000, resp);
+                resp.keepAliveTimer = setTimeout(arguments.callee, 130000, resp);
             }
             keepAlive(response);  // flush headers + keep-alive
 
