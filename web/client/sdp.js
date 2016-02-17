@@ -1,1 +1,1 @@
-../../../openwebrtc/bridge/client/sdp.js
+/home/dbarenas/openwebrtc/bridge/client/sdp.js

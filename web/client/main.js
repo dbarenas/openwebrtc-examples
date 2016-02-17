@@ -262,11 +262,13 @@ function start(isInitiator) {
 }
 
 function localDescCreated(desc) {
+    console.log("**here****")
     pc.setLocalDescription(desc, function () {
         var sdp = "";
         var sessionDescription = SDP.parse(pc.localDescription.sdp);
-        if (!sessionDescription)
-            sdp = pc.localDescription.sdp;
+	console.log(sessionDescription)
+	sdp = pc.localDescription.sdp;
+ 
         peer.send(JSON.stringify({
             "sdp": sdp,
             "sessionDescription": sessionDescription,
